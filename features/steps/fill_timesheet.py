@@ -12,7 +12,9 @@ def fill_valid_time(context):
         'td.day input')
     for idx, day in enumerate(all_days):
         if idx < 5:
-            day.send_keys("8")
+            day.send_keys("8.00")
+        if idx >= 5:
+            day.send_keys("0.00")
     time.sleep(2)
 
 
