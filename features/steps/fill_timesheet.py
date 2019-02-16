@@ -23,5 +23,6 @@ def click_on_submit(context):
     """
     submit_for_approval = context.browser.find_elements_by_css_selector(
         "input[type='button'][value='Submit for Approval']")
-    submit_for_approval.click()
+    for item in submit_for_approval:
+        item.click()
     time.sleep(10)

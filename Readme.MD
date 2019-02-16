@@ -14,6 +14,7 @@ I know you're busy or might be out of office. But it is important to fill the re
 
     cd ~/
     virtualenv -p python3 venv
+    source ~/venv/bin/activate
     cd fill_timesheets/
     pip3 install -r requirements.txt
 
