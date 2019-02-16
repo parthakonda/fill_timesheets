@@ -20,11 +20,11 @@ def before_all(context):
     REPLICON_PASSWORD = os.getenv('REPLICON_PASSWORD', None)
 
     if REPLICON_COMPANY:
-        context.config.REPLICON_COMPANY = REPLICON_COMPANY
+        context.config['REPLICON_COMPANY'] = REPLICON_COMPANY
     if REPLICON_USERNAME:
-        context.config.REPLICON_USERNAME = REPLICON_USERNAME
+        context.config['REPLICON_USERNAME'] = REPLICON_USERNAME
     if REPLICON_PASSWORD:
-        context.config.REPLICON_PASSWORD = REPLICON_PASSWORD
+        context.config['REPLICON_PASSWORD'] = REPLICON_PASSWORD
 
 
 def before_feature(context, feature):
