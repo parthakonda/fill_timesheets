@@ -1,7 +1,4 @@
 from behave import *
-from selenium import webdriver
-from selenium.common.exceptions import (ElementNotInteractableException,
-                                        NoSuchElementException)
 import time
 
 
